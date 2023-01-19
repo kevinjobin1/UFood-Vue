@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap%27");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .background-transition {
+        transition: background-color 0.3s, color 0.3s;
+    }
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    body::-webkit-scrollbar {
+        width: 7px;
+        height: 15px;
+        background-color: black;
+    }
+    body::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: grey;
+        border-radius: 10px;
+    }
+}
